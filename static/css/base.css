@@ -6,7 +6,7 @@ body {
     background: url('/media/homepage_background_image.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #1d614c;
     font-family: 'Lato';
 }
 
@@ -28,26 +28,26 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #1d614c;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: #1d614c;
     color: white;
 }
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    color: #1d614c !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #1d614c;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
+    background: #1d614c;
     color: white !important;
 }
 
@@ -57,7 +57,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #1d614c;
     color: white;
 }
 
@@ -66,11 +66,11 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #1d614c !important;
 }
 
 .bg-black {
-    background: #000 !important;
+    background: #1d614c !important;
 }
 
 .overlay {
@@ -84,7 +84,7 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
+    background: #1d614c !important;
     color: #fff !important;
 }
 
@@ -105,6 +105,8 @@ a.category-badge > span.badge:hover {
 input[name='q']::placeholder {
     color: #aab7c4;
 }
+
+
 
 /* ------------------------------- bootstrap toasts */
 
@@ -129,7 +131,7 @@ input[name='q']::placeholder {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #1d614c;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -176,15 +178,15 @@ input[name='q']::placeholder {
 
 .site-footer
 {
-  background-color:#26272b;
+  background-color:#dd6643;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:#252151;
 }
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color:#252151;
   opacity:0.5
 }
 .site-footer hr.small
@@ -201,7 +203,7 @@ input[name='q']::placeholder {
 }
 .site-footer a
 {
-  color:#737373;
+  color:#252151;
 }
 .site-footer a:hover
 {
@@ -219,11 +221,11 @@ input[name='q']::placeholder {
 }
 .footer-links a
 {
-  color:#737373
+  color:#1d614c
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#3366cc;
+  color:#252151;
   text-decoration:none;
 }
 .footer-links.inline li
@@ -242,7 +244,7 @@ input[name='q']::placeholder {
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#252151
 }
 .copyright-text
 {
@@ -344,6 +346,7 @@ input[name='q']::placeholder {
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
+    padding-bottom: 5%;
   }
 }
 
@@ -351,11 +354,11 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    color: #dd6643; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: #1d614c;
     border-radius: 0;
 }
 
@@ -364,7 +367,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
+    color: #dd6643;
 }
 
 .allauth-form-inner-content button,
@@ -379,8 +382,8 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #1d614c;
+    border: 1px solid #1d614c;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -393,12 +396,12 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
-    border-color: #222;
+    background-color: #1d614c;
+    border-color: #1d614c;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #dd6643; /* text-info */
 }
 
 /* Product Form */
