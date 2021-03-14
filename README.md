@@ -154,7 +154,7 @@ Password: Nativo-julita10
 - Only Superuser can delete products.
 - [CR**U**D] Update or 'edit' products.
 
-**Add New Products **
+**Add New Products**
 - Only Superuser can add new products.
 [**C**RUD] Create or 'add' a new product to the shop offer.
 
@@ -194,7 +194,7 @@ Password: Nativo-julita10
     - [Python 3](https://www.python.org/) - Used as the back-end programming language.
     - [AWS](https://aws.amazon.com/) - Used to store my static and media files.
 - **Stripe**
-    - [Stripe] (https://stripe.com/) - Used as the payments infrastructure
+    - [Stripe](https://stripe.com/) - Used as the payments infrastructure
 
 
 ##### back to [top](#table-of-contents)
