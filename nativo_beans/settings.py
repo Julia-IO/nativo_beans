@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
+import dj_database_url
 
 from pathlib import Path
 
@@ -121,11 +122,15 @@ WSGI_APPLICATION = 'nativo_beans.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#    'default': {
+#       'ENGINE': 'django.db.backends.sqlite3',
+#       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse('postgres://qwdoecrsvzjvmw:97079b04f27f4c9d9f7015cfe4df6df481aa52d8a6fa2f7f11b502162ccf1309@ec2-63-34-97-163.eu-west-1.compute.amazonaws.com:5432/d3of38tqhntk4b')
 }
 
 
