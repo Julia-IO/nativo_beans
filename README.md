@@ -45,9 +45,19 @@ View in Iphone
 
 ## UX
 
-This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, specifically the **Data Centric Development** module. The objective for this milestone project is to create a web application that allows to simplify and improve localization processes", using the **CRUD** operations of **C**reate, **R**ead, **U**pdate, and **D**elete for their projects.
+This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, specifically the **Full Stack Frameworks With Django** module. 
+In this project, I've built a full-stack site based around an e-commerce business logic used to control a centrally-owned dataset. 
 
-I have decided to build a a project based on the localization industry, since I have personally spent years working as a linguist, project manager and QA specialist and I would have liked to have such a system when collaborating on localization projects.
+Value Provided:
+
+By authenticating on the site, users can advance their own goals (buy products).
+Before authenticating, the site makes it clear how those goals would be furthered by the site.
+The site owner is able to make money by providing this set of services to the users. There is no way for a regular user to bypass the site's mechanisms and derive all of the value available to paid users without paying.
+
+I decided to build an e-commerce project so that I could follow step by step the course explanations.
+I finally adapted it to my personal purpose, which was offering Coffee and Cacao products from Peru.
+
+
 
 ### User Stories
 
@@ -56,54 +66,56 @@ I have decided to build a a project based on the localization industry, since I 
 :white_check_mark: *denotes items that have been successfully implemented*
 
 - :white_check_mark: *view the site* from **any device** *(mobile, tablet, desktop)*.
-- :white_check_mark: *view all projects* as an **Admin**.
-- :white_check_mark: *add* new **linguists** as an **Admin**.
-- :white_check_mark: *add* new **projects** as an **Admin**.
-- :white_check_mark: *edit* **project categories** as an **Admin**.
-- :white_check_mark: *delete* **project categories** as an **Admin**.
-- :white_check_mark: *delete* completed **projects** as an **Admin**.
-- :white_check_mark: *edit* **projects** as an **Admin**.
-- :white_check_mark: *view my only assigned projects* as a **Linguist**.
-- :white_check_mark: be able to **log out**.
-- :white_check_mark: *filter projects* by **linguist assigned to project**.
-- :white_check_mark: *filter projects* by **project lead**.
-- :white_check_mark: *filter projects* by **project name**.
-- :white_check_mark: *filter projects* by **project language pairs**.
-
+- :white_check_mark: *view a list of products* as a **Site User**.
+- :white_check_mark: *view individual product details* as a **Site User**.
+- :white_check_mark: *easily view the total of my purchases* at **anytime** as a **Site User**.
+- :white_check_mark: *easily register for an account* as a **Site User**.
+- :white_check_mark: *easily login or logout* as a **Site User**.
+- :white_check_mark: *easily recover my password* as a **Site User**.
+- :white_check_mark: *receive an email confirmation after registering* as a **Site User**.
+- :white_check_mark: *have a personalised user profile* as a **Site User**.
+- :white_check_mark: *sort the list of available products* as a **Site User**.
+- :white_check_mark: *sort a specific category of a product* as a **Site User**.
+- :white_check_mark: *search for a product by name or description* as a **Site User**.
+- :white_check_mark: *easily select the quantity of a product* as a **Site User**.
+- :white_check_mark: *easily and securely checkout* as a **Site User**.
+- :white_check_mark: *easily add new products* as an **Admin User**.
+- :white_check_mark: *easily update products* as an **Admin User**.
+- :white_check_mark: *easily delete products* as an **Admin User**.
 
 ### Design
 
-When it comes to project managing, I think it is important to keep it simple and functional.
+I've followed a simple design prioritizing simplicity and usability.
 
 #### Framework
 
-- [Materialize 1.0.0](https://materializecss.com/)
-    - I really like the modern and clean layout of Materialize as a framework, with its simple-to-understand documentation.
+- [Bootstrap 4.4.1](https://getbootstrap.com/)
+    - Front-end open source toolkit to help desing responsive mobile-first sites.
 - [jQuery 3.5.1](https://code.jquery.com/jquery/)
-    - In an effort to keep the JavaScript minimal, I have decided to use jQuery as foundation to my scripts framework.
-- [Flask 1.1.2](https://flask.palletsprojects.com/en/1.1.x/)
-    - Flask is a microframework that I've used to render the back-end Python with the front-end Materialize.
+    -To keep the JavaScript minimal, I have decided to use jQuery as foundation to my scripts framework.
+- [Django 3.1.7](https://www.djangoproject.com/)
+    - Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
 
 #### Color Scheme
 
-I have opted for a clear background scheme using teal, orange and red in certain buttons to add some color. These standard [Materialize Colors](https://materializecss.com/color.html) work quite well for my project.
+I have opted for a clear background scheme lighten up with the following colours palette:
 
-- ![#424242](https://placehold.it/15/424242/424242) `#424242` (**grey darken-3** - *navs and footbar*)
-- ![#f5f5f5](https://placehold.it/15/f5f5f5/f5f5f5) `#f5f5f5` (**grey lighten-4** - *cardpanels*)
-- ![#009688](https://placehold.it/15/009688/009688) `#009688` (**teal** - *main action buttons*)
-- ![#f44336](https://placehold.it/15/f44336/f44336) `#f44336` (**red** - *reset/edit buttons*)
+- ![#1d614c](https://placehold.it/15/1d614c/1d614c) `#1d614c` (hex #1d614c is composed of 11.4% red, 38% green and 29.8% blue. - *card panels and main action buttons*)
+- ![#dd6643](https://placehold.it/15/dd6643/dd6643) `#dd6643` (hex #dd6643 is a shade of red orange - *footer background and some forms placeholders*)
+- ![#252151](https://placehold.it/15/252151/252151) `#252151` (hex #252151 is a dark shade of blue-magenta - *Footer text colour and social icons*)
+- ![#ed2137](https://placehold.it/15/ed2137/ed2137) `#ed2137` (hex #ed2137 is a shade of pink-red - *home background image*)
+
+This colour palette has been thought taking as an inspiration the colours found in Peru landscapes.
 
 #### Icons
 
-- [Materialize Icons](https://materializecss.com/icons.html)
-    - I've retained only a select few of the standard Materialize Icons.
 - [Font Awesome 5.8.1](https://fontawesome.com/)
     - Although Materialize Icons have nearly 1,000 free-to-use icons, I prefer the look of Font Awesome's icons, and they have more to suit my specific needs for this project. 
 
 #### Typography
 
 - I have used [Google Fonts](https://fonts.google.com/). I have stick to one font: 
-    - [Ubuntu](https://fonts.google.com/specimen/Ubuntu)
+    - [Lato](https://fonts.google.com/specimen/Lato)
 
 
 ### Wireframes
@@ -118,68 +130,39 @@ For my wireframes, I have used sketches on a notebook. It's how I like it the be
 ### Existing Features
 
 **Register Account**
-- Not everybody can register and create their own unique account. As this app is intended for professional teams, only the Admin will be able to add new linguists to the team (or delete them). All passwords are hashed for security purposes!
-In order to check how Linguists Account are created, you'll need to use the following username and user password:
-Username: admin
-Password: project_admin
+- I've created a superuser who can Add, Update and Delete Products. To check this funcionality, please use:
+Username: julita10
+Password: Nativo-julita10
 
-The Admin is granted with full permission to get all the info displayed and he/she can also edit, create and delete certain categories.
 
+**Sign up to the shop**
+- Site Users can sign up to create an user and they will get a confirmation email to validate their accounts.
 
 
 **Log In to Account**
-- Linguists can access using the login details provided by their admin and can only view a dashboard with the projects assigned to them. They can also access to their profile data.
-
-I have created 3 linguists as example:
-Linguist 1:
-username: jdiezes
-password: eslinguist01
-
-Linguist 2:
-username: vlenyfr
-password: frlinguist01
-
-Linguist3: 
-username: rlamsfussde
-password: delinguist01
+- Once users have signed up, they can easily log in to their accounts.
 
 
 **Log Out of Account**
 - Users can easily log out of their account with the click of a button.
 
-**Delete Account**
-- Only Admin can delete accounts.
+**Delete Products**
+- Only Superuser can delete products.
+- [CRU**D**] Delete or 'remove' products.
 
-**View All Projectss**
-- Only Admin can view All Projects and also edit and/or delete them once completed.
+**Update Projectss**
+- Only Superuser can delete products.
+- [CR**U**D] Update or 'edit' products.
 
-**View Assigned Projectss**
-- Linguists can view only their assigned projects.
-
-**Search Projects**
-- Search functionality is provided to search by linguist assigned, language pairs, project lead or project name.
-
-**Add a Project/ Category**
-- Only available to Admin account.
-- [**C**RUD] Create or 'add' a new category/service and or project and or linguist.
-
-**Update a Project**
-- Only available to Admin account.
-- [CR**U**D] Update or 'edit' categories and/or projects.
-
-**Delete a Recipe**
-- Only available to Admin account.
-- [CRU**D**] Delete or 'remove' categories and/or projects.
+**Add New Products **
+- Only Superuser can add new products.
+[**C**RUD] Create or 'add' a new product to the shop offer.
 
 
 ### Features Left to Implement
 
-In an ideal world, there are a couple items that I would've loved to have completed as well, but just didn't have the time or knowledge just yet as to how to implement these features.
 
-- Right now there is just 1 admin, but if teams grow we can expect to have several admins. Approach as to how to grant permissions should be improved so that Project Leads can also have specific permissions.
-- I'd like linguists to be able to mark their projects as Completed. Once a project is marked as completed, I'd like automatic mails to be sent to Project Leads.
-- I'd like linguists to be able to automate billing process once a project is completed. State of payments should also be displayed in their profiles.
-- I'd like to include downloadable files to the Projects Overview and downloadable invoice files to Linguist's profiles.
+- I'd like users to be able to change format (250g, 500g, 1 kg, etc) and that prices are updated automatically.
 
 ##### back to [top](#table-of-contents)
 
@@ -198,7 +181,7 @@ In an ideal world, there are a couple items that I would've loved to have comple
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - Used as the base for cascading styles.
 - [jQuery 3.5.1](https://code.jquery.com/jquery/) - Used as the primary JavaScript functionality.
 - [Materialize 1.0.0](https://materializecss.com/) - Used as the overall design framework.
-- [LeafletJS](https://leafletjs.com/): Used for Admin visitor tracking purposes.
+
 
 
 ### Back-End Technologies
