@@ -1,0 +1,1 @@
+web: gunicorn nativo_beans.wsgi:application
