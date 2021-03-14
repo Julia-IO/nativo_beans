@@ -1,6 +1,9 @@
 # [Nativo Beans Store - Shop Coffee and Cacao from Peru](https://nativo-beans.herokuapp.com/)
 
+View in Desktop
 <img src="https://github.com/Julia-IO/nativo_beans/blob/master/media/nativo_beans_desktop_view.png" width="800">
+
+View in Iphone
 <img src="https://github.com/Julia-IO/nativo_beans/blob/master/media/nativo_beans_iPhone_view.jpg" width="800">
 
 ---
